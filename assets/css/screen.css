@@ -113,8 +113,8 @@ body {
     position: relative;
     margin-top: 64px;
     padding-bottom: 12px;
-    color: #fff;
-    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
+    color: #000;
+    background: color(var(--lightyellow) l(-5%)) no-repeat center center;
     background-size: cover;
 }
 
@@ -283,7 +283,7 @@ body {
     right: 0;
     left: 0;
     z-index: 1000;
-    background: color(var(--darkgrey) l(-5%));
+    background: color(var(--lightyellow) l(-5%));
 }
 
 .site-nav {
@@ -311,12 +311,6 @@ body {
     z-index: 1000;
     width: 40px;
     height: 100%;
-}
-
-.site-header-background:not(.responsive-header-img) .site-nav-left-wrapper:after,
-.site-nav-main .site-nav-left-wrapper:after {
-    right: 0;
-    background: linear-gradient(to right, color(var(--darkgrey) l(-5%) a(0)) 0%,color(var(--darkgrey) l(-5%)) 100%);
 }
 
 .site-nav-left {
@@ -402,7 +396,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     position: relative;
     display: block;
     padding: 12px 12px;
-    color: #fff;
+    color: #000;
     opacity: 0.8;
     transition: opacity 0.35s ease-in-out;
 }
@@ -439,7 +433,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     visibility: hidden;
     position: absolute;
     top: 9px;
-    color: #fff;
+    color: #000;
     font-size: 1.7rem;
     font-weight: 400;
     text-transform: none;
@@ -508,7 +502,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .social-link svg {
     height: 1.8rem;
-    fill: #fff;
+    fill: #000;
 }
 
 .social-link-fb svg {
@@ -559,7 +553,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .rss-button svg {
     margin-bottom: 1px;
     height: 2.1rem;
-    fill: #fff;
+    fill: #000;
 }
 
 /* Special behaviors for home navigation */
@@ -1169,7 +1163,7 @@ Usage (In Ghost editor):
 .post-full-content blockquote {
     margin: 0 0 1.5em;
     padding: 0 1.5em;
-    border-left: color(var(--blue)) 3px solid;
+    border-left: #3eb0ef 3px solid;
 }
 @media (max-width: 500px) {
     .post-full-content blockquote {
