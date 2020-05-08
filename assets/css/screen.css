@@ -23,6 +23,7 @@ production stylesheet in assets/built/screen.css
 10. Subscribe Overlay
 11. Site Footer
 12. Dark Mode
+13. Play Section
 
 */
 
@@ -3071,3 +3072,30 @@ Usage (In Ghost editor):
         color: color(var(--green) l(+5%) s(-5%));
     }
 }
+
+/* 13. Play Section
+/* ---------------------------------------------------------- */
+.play-section {
+  position: relative;
+  width: 100%;
+}
+.play-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 132px;
+  width: 100%;
+}
+
+.play-button {
+  opacity: 1 !important;
+  width: 97px !important;
+  height: 97px !important;
+  margin: 17px auto !important;
+  z-index: 1001;
+}
+
+.play-section figcaption {
+  margin-top: 132px;
+}
+
