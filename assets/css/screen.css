@@ -2808,6 +2808,7 @@ Usage (In Ghost editor):
 /* ---------------------------------------------------------- */
 
 .site-footer {
+    z-index: 100;
     position: relative;
     padding-top: 20px;
     padding-bottom: 60px;
@@ -3123,7 +3124,6 @@ Usage (In Ghost editor):
   position: fixed;
   top: 140px;
   list-style: none;
-  padding: 0 40px;
   z-index: 1000;
 }
 
