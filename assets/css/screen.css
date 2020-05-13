@@ -623,6 +623,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin: 0 -20px;
     padding: 50px 0 0;
     background: #fff;
+    border-top: 1px solid #DBCEAB;
 }
 
 .post-card {
@@ -995,7 +996,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .post-full-custom-excerpt {
     margin: 20px 0 0;
-    color: var(--midgrey);
+    color: #B79D57;
     font-family: Georgia, serif;
     font-size: 2.3rem;
     line-height: 1.4em;
@@ -1510,7 +1511,7 @@ Usage (In Ghost editor):
     justify-content: space-between;
     margin: 35px 0 0;
     padding-top: 15px;
-    border-top: 1px solid color(var(--lightgrey) l(+10%));
+    border-top: 1px solid #eee;
 }
 
 .post-full-byline-content {
@@ -1872,6 +1873,7 @@ Usage (In Ghost editor):
 .read-next {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     background: color(var(--darkgrey) l(-5%));
+    z-index: 100;
 }
 
 .read-next-feed {
