@@ -116,7 +116,7 @@ body {
     margin-top: 64px;
     padding-bottom: 12px;
     color: #000;
-    background: #FDF7E7;
+    background: #FFF;
     background-size: cover;
 }
 
@@ -285,7 +285,8 @@ body {
     right: 0;
     left: 0;
     z-index: 1000;
-    background: #FDF7E7;
+    background: #FFF;
+    box-shadow: 0 8px 6px -10px #B79D57;
 }
 
 .site-nav {
@@ -458,6 +459,12 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     transform: translateY(0);
 }
 
+@media (max-width: 850px) {
+  .nav-post-title {
+    display: none;
+  }
+}
+
 .site-nav-right {
     flex: 0 1 auto;
     display: flex;
@@ -481,7 +488,15 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .site-nav-right .nav li:last-of-type a {
-    margin-right: -12px;
+    border: 2px solid #B79D57;
+    border-radius: 24px;
+    font-weight: bold;
+    color: #B79D57;
+}
+
+.site-nav-right .nav li:last-of-type a:hover {
+    background: #B79D57;
+    color: #fff;
 }
 
 .social-links {
@@ -3104,11 +3119,33 @@ Usage (In Ghost editor):
 /* ---------------------------------------------------------- */
 .share {
   position: fixed;
-  margin-left: -100px !important;
+  top: 140px;
   list-style: none;
-  padding: 0;
+  padding: 0 40px;
+  z-index: 1000;
 }
 
 .share a {
   box-shadow: none;
+}
+
+.share a svg path {
+  fill: #DBCEAB;
+}
+
+.share a:hover svg path {
+  fill: #B79D57;
+}
+
+@media (max-width: 800px) {
+  .share {
+    top: calc(100vh - 56px);
+    left: 0;
+    background: #fdf7e7;
+  }
+
+  .share li {
+    float: left;
+    padding: 5px 10px;
+  }
 }
