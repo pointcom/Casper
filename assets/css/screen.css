@@ -24,6 +24,7 @@ production stylesheet in assets/built/screen.css
 11. Site Footer
 12. Dark Mode
 13. Play Section
+14. Share Section
 
 */
 
@@ -115,7 +116,7 @@ body {
     margin-top: 64px;
     padding-bottom: 12px;
     color: #000;
-    background: color(var(--lightyellow) l(-5%)) no-repeat center center;
+    background: #FDF7E7;
     background-size: cover;
 }
 
@@ -170,7 +171,7 @@ body {
 }
 
 .site-logo {
-    max-height: 55px;
+    max-height: 100px;
 }
 
 .site-description {
@@ -284,7 +285,7 @@ body {
     right: 0;
     left: 0;
     z-index: 1000;
-    background: color(var(--lightyellow) l(-5%));
+    background: #FDF7E7;
 }
 
 .site-nav {
@@ -349,7 +350,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex-shrink: 0;
     display: inline-block;
     margin-right: 32px;
-    padding: 12px 0;
     color: #fff;
     font-size: 1.7rem;
     line-height: 1.8rem;
@@ -365,7 +365,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .site-nav-logo img {
     display: block;
     width: auto;
-    height: 21px;
+    height: 50px;
 }
 
 .site-home-header .site-nav-logo {
@@ -3099,3 +3099,16 @@ Usage (In Ghost editor):
   margin-top: 132px;
 }
 
+
+/* 14. Share Section
+/* ---------------------------------------------------------- */
+.share {
+  position: fixed;
+  margin-left: -100px !important;
+  list-style: none;
+  padding: 0;
+}
+
+.share a {
+  box-shadow: none;
+}
