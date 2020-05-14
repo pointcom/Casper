@@ -3120,14 +3120,18 @@ Usage (In Ghost editor):
 
 /* 14. Share Section
 /* ---------------------------------------------------------- */
+.share, .share-bottom {
+  list-style: none;
+}
+
 .share {
   position: fixed;
   top: 140px;
-  list-style: none;
   z-index: 1000;
 }
 
-.share a {
+
+.share a, .share-bottom a {
   box-shadow: none;
 }
 
@@ -3139,15 +3143,40 @@ Usage (In Ghost editor):
   fill: #B79D57;
 }
 
+.share li {
+  padding-bottom: 10px;
+}
+
+.share-bottom li {
+}
+
+.share-bottom a {
+  background: #DBCEAB;
+  height: 50px;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.share-bottom svg {
+  margin-right: 10px;
+}
+
+.share-title {
+  text-align: center;
+  color: #B79D57 !important;
+}
+
 @media (max-width: 800px) {
   .share {
-    top: calc(100vh - 56px);
-    left: 0;
-    background: #fdf7e7;
+    display: none;
   }
+}
 
-  .share li {
-    float: left;
-    padding: 5px 10px;
+@media (min-width: 800px) {
+  .share-bottom {
+    display: none;
   }
 }
